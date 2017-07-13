@@ -1,7 +1,8 @@
 # es6笔记
 
 ## Promise
-1. Promise.catch会返回一个Promise对象如果catch代码块中无错会触发`resolve`传递return的值,有错会触发`reject`.
+1. `Promise.prototype.catch`和`Promise.prototype.then`都会返回一个Promise对象,
+如果代码块中无错会触发`resolve`传递return的值,有错会触发`reject`,以下代码用catch举例.
 
 ```javascript
 let someAsyncThing = function() {
